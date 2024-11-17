@@ -1,3 +1,13 @@
+CHROMEDRIVER_PATH= "C:/chromedriver-win64/chromedriver.exe"
+CHROME_PROFILE_PATH = "C:/Users/DEEP SAHA/AppData/Local/Google/Chrome/User Data/Default"
+TWITTER_CLIENT_ID = "hmqwSfcYqAvRfxgNZPchAoLVZ"
+TWITTER_CLIENT_SECRET = "r5RlXNFAvS4z3W4ZUYXNw1IHZDWLyip6leGRbpV1fBl2h9fhH9"
+TWITTER_CALLBACK_URL = "https://ultimate-connector.vercel.app/auth/twitter/callback"
+TWITTER_SIGNUP_CALLBACK_URL = "https://ultimate-connector.vercel.app/auth/signup/twitter/callback"
+
+
+
+
 @app.get("/api/twitter/signup/register")
 async def twitter_register():
     oauth = OAuth1Session(
